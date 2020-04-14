@@ -19,4 +19,4 @@ git clone https://github.com/hosseininaveh/Moor_For_BIM cd .. catkin_make
 
 --Terminal 2: roslaunch moor_navigation moor_amcl_demo.launch
 
---Terminal 3: roslaunch rviz rviz and open file /home/ali/mybot_ws/src/moor_navigation/rviz/rviz_config.rviz
+--Terminal 3: rosrun rviz rviz and open file /home/ali/mybot_ws/src/moor_navigation/rviz/rviz_config.rviz
