@@ -52,5 +52,5 @@
 
   <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
    <!-- to capture image, rosrun image_grabber ifcapture and press p-->
-  <node name="image_grabber" pkg="image_grabber" type="image_grabber"/>
+  <!--node name="image_grabber" pkg="image_grabber" type="image_grabber"/-->
 </launch>
