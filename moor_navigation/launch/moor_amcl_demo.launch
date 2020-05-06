@@ -11,9 +11,15 @@
 
   <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
 
-  <!-- Place map frame at odometry frame -->
-  <node pkg="tf" type="static_transform_publisher" name="map_odom_broadcaster"
-      args="0 0 0 0 0 0 map odom 5"/>
+
+
+ <node pkg="robot_localization" type="ekf_localization_node" name="ekf_localization_moor">
+   <remap from="/odometry/filtered" to="odom"/>
+    <rosparam command="load" file="$(find moor_navigation)/config/localization_moor.yaml" />
+
+  </node>
+ 
+  <include file="/home/ali/mybot_ws/src/moor_navigation/launch/amcl.launch"/>
 
   <!-- Localization -->
   <!--node pkg="amcl" type="amcl" name="amcl" output="screen">
@@ -24,8 +30,6 @@
     <param name="update_min_d" value="0.5"/>
     <param name="update_min_a" value="1.0"/>
   </node-->
-  <include file="$(find moor_navigation)//launch//amcl.launch"/>
-
 
 
   <!-- Move base -->
@@ -48,5 +52,4 @@
   </node>
 
 </launch>
-
 
