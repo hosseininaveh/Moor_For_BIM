@@ -37,9 +37,9 @@
         <robotNamespace>/</robotNamespace>
         <robotBaseFrame>base_link</robotBaseFrame>
         <commandTopic>/cmd_vel</commandTopic>
-        <odometryTopic>odom</odometryTopic>
+        <odometryTopic>/wheel/odom</odometryTopic>
         <odometryFrame>odom</odometryFrame>
-        <publishOdometryTf>1</publishOdometryTf>
+        <publishOdometryTf>0</publishOdometryTf>
         <publishOdometryMsg>1</publishOdometryMsg>
       </plugin>
 </gazebo>
