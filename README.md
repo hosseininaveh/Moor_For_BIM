@@ -12,7 +12,12 @@ sudo apt-get install ros-melodic-navigation
 --If there is a catkin workspace in the home direcotry named catkin_ws, then 
 
 cd ~/catkin_ws/src 
-git clone https://github.com/hosseininaveh/Moor_For_BIM cd .. catkin_make
+git clone https://github.com/hosseininaveh/Moor_For_BIM 
+git clone https://github.com/turtlebot/turtlebot/tree/melodic
+
+cd ~/catkin_ws
+rosdep install --from-paths src -i -y
+catkin_make
 
 -----------------------Running the repository: 
 --terminal 1: roslaunch mybot_gazebo mybot_world.launch
