@@ -6,26 +6,42 @@ This package needs ROS melodic installed on your system. It was successfully run
 
 -----------------------Installation: 
 in terminal:
+
 cd ~/.gazebo/models
+
 wget https://drive.google.com/drive/folders/1-kC0MSHYC91biIX_aZPrDwhJaaexI3yA?usp=sharing
 
 sudo apt-get install ros-melodic-move-base 
+
 sudo apt-get install ros-melodic-navigation
 
 --If there is a catkin workspace in the home direcotry named catkin_ws, then 
 
 cd ~/catkin_ws/src 
+
 git clone https://github.com/yujinrobot/yocs_msgs.git
+
 git clone https://github.com/hosseininaveh/Moor_For_BIM 
+
 git clone https://github.com/turtlebot/turtlebot/tree/melodic
 
 cd ~/catkin_ws
+
 rosdep install --from-paths src -i -y
+
 catkin_make
 
+
 -----------------------Running the repository: 
---terminal 1: roslaunch mybot_gazebo mybot_world.launch
 
---Terminal 2: roslaunch moor_navigation moor_amcl_demo.launch
+--terminal 1: 
 
---Terminal 3: rosrun rviz rviz and open file /home/ali/mybot_ws/src/moor_navigation/rviz/rviz_config.rviz
+roslaunch mybot_gazebo mybot_world.launch
+
+--Terminal 2: 
+
+roslaunch moor_navigation moor_amcl_demo.launch
+
+--Terminal 3: 
+
+rosrun rviz rviz and open file /home/ali/mybot_ws/src/moor_navigation/rviz/rviz_config.rviz
