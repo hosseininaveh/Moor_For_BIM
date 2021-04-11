@@ -48,4 +48,4 @@ roslaunch moor_navigation moor_amcl_demo.launch
 
 --Terminal 3: 
 
-rosrun rviz rviz and open file /home/ali/mybot_ws/src/moor_navigation/rviz/rviz_config.rviz
+rosrun rviz rviz and open file ~/catkin_ws/src/Moor_For_BIM/moor_navigation/rviz/rviz_config.rviz
