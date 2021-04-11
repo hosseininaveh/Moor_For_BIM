@@ -5,6 +5,9 @@ Autonomous six wheels Robot for 3D modelling of a building
 This package needs ROS melodic installed on your system. It was successfully run on ubuntu 18.0.4
 
 -----------------------Installation: 
+in terminal:
+cd ~/.gazebo/models
+wget https://drive.google.com/drive/folders/1-kC0MSHYC91biIX_aZPrDwhJaaexI3yA?usp=sharing
 
 sudo apt-get install ros-melodic-move-base 
 sudo apt-get install ros-melodic-navigation
