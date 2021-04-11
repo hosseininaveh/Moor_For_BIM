@@ -17,6 +17,8 @@ sudo apt-get install ros-melodic-move-base
 
 sudo apt-get install ros-melodic-navigation
 
+sudo apt-get install ros-melodic-robot-localization
+
 --If there is a catkin workspace in the home direcotry named catkin_ws, then 
 
 cd ~/catkin_ws/src 
