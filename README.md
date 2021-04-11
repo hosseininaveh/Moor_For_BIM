@@ -12,6 +12,7 @@ sudo apt-get install ros-melodic-navigation
 --If there is a catkin workspace in the home direcotry named catkin_ws, then 
 
 cd ~/catkin_ws/src 
+git clone https://github.com/yujinrobot/yocs_msgs.git
 git clone https://github.com/hosseininaveh/Moor_For_BIM 
 git clone https://github.com/turtlebot/turtlebot/tree/melodic
 
