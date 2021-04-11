@@ -8,11 +8,11 @@ This package needs ROS melodic installed on your system. It was successfully run
 It can also be used for ROS noetic and ubuntu 20.04. For this version for the word "melodic" in the following commands should be replaced with "noetic" 
 
 -----------------------Installation: 
-in terminal:
+go to the following link and download all the files https://drive.google.com/drive/folders/1-kC0MSHYC91biIX_aZPrDwhJaaexI3yA?usp=sharing and copy them in a folder called "building" in the follwoing address
 
-cd ~/.gazebo/models
 
-wget https://drive.google.com/drive/folders/1-kC0MSHYC91biIX_aZPrDwhJaaexI3yA?usp=sharing
+~/.gazebo/models
+
 
 sudo apt-get install ros-melodic-move-base 
 
