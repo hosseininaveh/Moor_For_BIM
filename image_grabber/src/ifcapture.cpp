@@ -4,7 +4,9 @@
 #include <termios.h>
 #include <sys/select.h>     //Used for kbhit and getch_
 #include <sys/ioctl.h>      //Used for kbhit and getch_
-#include <stropts.h>        //Used for kbhit and getch_
+#if HAVE_STROPTS_H
+#include <stropts.h>
+#endif
 int _kbhit() {
     static const int STDIN = 0;
     static bool initialized = false;
