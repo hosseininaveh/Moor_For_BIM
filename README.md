@@ -38,14 +38,18 @@ catkin_make
 
 -----------------------Running the repository: 
 
---terminal 1: 
+in terminal 1:
 
 roslaunch mybot_gazebo mybot_world.launch
 
---Terminal 2: 
+in terminal 2:
+
+roslaunch yocs_waypoint_provider provider.launch
+
+in terminal 3:
 
 roslaunch moor_navigation moor_amcl_demo.launch
 
---Terminal 3: 
+in terminal 4:
 
 rosrun rviz rviz and open file ~/catkin_ws/src/Moor_For_BIM/moor_navigation/rviz/rviz_config.rviz
