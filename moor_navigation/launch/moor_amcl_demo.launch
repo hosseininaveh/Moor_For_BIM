@@ -7,7 +7,7 @@
   <arg name="base_local_planner" default="dwa_local_planner/DWAPlannerROS"/>
   <!--arg name="base_local_planner" default="base_local_planner/TrajectoryPlannerROS"/--> 
   <!-- Map server -->
-  <arg name="map_file" default="/home/ali/mybot_ws/src/moor_navigation/maps/refectory_gmapping_2.yaml"/>
+  <arg name="map_file" default="$(find moor_navigation)/maps/refectory_gmapping_2.yaml"/>
 
   <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
 
@@ -19,7 +19,7 @@
 
   </node>
  
-  <include file="/home/ali/mybot_ws/src/moor_navigation/launch/amcl.launch"/>
+  <include file="$(find moor_navigation)/launch/amcl.launch"/>
 
   <!-- Localization -->
   <!--node pkg="amcl" type="amcl" name="amcl" output="screen">
