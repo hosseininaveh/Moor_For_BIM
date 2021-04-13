@@ -35,6 +35,7 @@ rosdep install --from-paths src -i -y
 
 catkin_make
 
+mkdir ~/Desktop/moor_images
 
 -----------------------Running the repository: 
 
