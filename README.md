@@ -24,7 +24,9 @@ https://github.com/hosseininaveh/buildings
   curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py
 
   sudo python2 get-pip.py
-
+  
+  sudo apt install python
+ 
   python -m pip install --user numpy scipy matplotlib ipython jupyter pandas sympy nose
   
 3) the follwoing package should also be installed. In case of using ROS noetic, replace 'melodic' with 'noetic' in the follwoing commands:
