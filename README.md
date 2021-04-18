@@ -46,7 +46,7 @@ git clone https://github.com/hosseininaveh/Moor_For_BIM
 
 git clone https://github.com/turtlebot/turtlebot/tree/melodic
 
-gir clone https://github.com/husky/husky.git
+git clone https://github.com/husky/husky.git
 
 cd ~/catkin_ws
 
