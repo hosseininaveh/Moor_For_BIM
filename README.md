@@ -5,8 +5,6 @@ Autonomous six wheels Robot for 3D modelling of a building
 This package needs ROS melodic installed on your system. It was successfully run on ubuntu 18.0.4
 
 
-It can also be used for ROS noetic and ubuntu 20.04. For this version for the word "melodic" in the following commands should be replaced with "noetic" 
-
 -----------------------Installation: 
 
 
