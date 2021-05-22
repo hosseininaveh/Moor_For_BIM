@@ -80,6 +80,8 @@ After running the above commands, the robot should automatically navigate and ca
 
 
 Citation:
+
+
 Hosseininaveh, Ali, and Fabio Remondino. "An Imaging Network Design for UGV-Based 3D Reconstruction of Buildings." Remote Sensing 13, no. 10 (2021): 1923.
 https://www.mdpi.com/2072-4292/13/10/1923
 
