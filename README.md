@@ -37,6 +37,9 @@ git clone https://github.com/yujinrobot/yocs_msgs.git
 git clone https://github.com/hosseininaveh/Moor_For_BIM 
 git clone https://github.com/turtlebot/turtlebot.git
 git clone https://github.com/husky/husky.git
+
+sudo apt-get install ros-noetic-cv-bridge ros-noetic-image-transport ros-noetic-joy ros-noetic-controller-manager ros-noetic-joint-state-controller
+
 cd ~/catkin_ws
 rosdep install --from-paths src -i -y
 catkin_make
