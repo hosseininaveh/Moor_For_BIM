@@ -34,9 +34,9 @@ https://github.com/hosseininaveh/buildings
 3) the following packages should also be installed. 
 
  ```
-sudo apt-get install ros-melodic-move-base 
-sudo apt-get install ros-melodic-navigation
-sudo apt-get install ros-melodic-robot-localization
+sudo apt-get install ros-noetic-move-base 
+sudo apt-get install ros-noetic-navigation
+sudo apt-get install ros-noetic-robot-localization
 ```
 4) If there is a catkin workspace in the home directory named catkin_ws, then 
 
