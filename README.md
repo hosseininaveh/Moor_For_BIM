@@ -47,7 +47,7 @@ git clone https://github.com/hosseininaveh/Moor_For_BIM
 git clone https://github.com/turtlebot/turtlebot.git
 git clone https://github.com/husky/husky.git
 
-sudo apt-get install ros-noetic-cv-bridge ros-noetic-image-transport ros-noetic-joy ros-noetic-controller-manager ros-noetic-joint-state-controller ros-noetic-gazebo-ros
+sudo apt-get install ros-noetic-cv-bridge ros-noetic-image-transport ros-noetic-joy ros-noetic-controller-manager ros-noetic-joint-state-controller ros-noetic-gazebo-ros ros-noetic-rviz
 
 cd ~/catkin_ws
 rosdep install --from-paths src -i -y
