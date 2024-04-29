@@ -1,11 +1,24 @@
 # Moor_For_BIM
 Autonomous six wheels Robot for 3D modelling of a building
 
-# Installation on ROS neotic: 
-
+# Installation on ROS noetic: 
+If you are going to install the packages in Ubuntu 22.04 or later, you can use docker. In this case, please do these extra steps:
+```
+sudo apt update
+sudo apt install docker.io
+sudo systemctl start docker
+sudo systemctl enable docker
+docker pull ros:noetic-robot
+```
+Now, you will have ROS noetic on docker in Ubuntu 22.04. To run the docker run the following code in every terminal:
+```
+docker run -it ros:noetic-robot
+```
 
 1) go to the following link and follow the steps mentioned in readme:
 https://github.com/hosseininaveh/buildings
+
+
 
 2) in the case of using Ubuntu 20.04 and ROS noetic, the following steps should be followed:
 
@@ -18,7 +31,7 @@ https://github.com/hosseininaveh/buildings
   sudo apt install python
   python -m pip install --user numpy scipy matplotlib ipython jupyter pandas sympy nose
 ```  
-3) the follwoing packages should also be installed. 
+3) the following packages should also be installed. 
 
  ```
 sudo apt-get install ros-melodic-move-base 
