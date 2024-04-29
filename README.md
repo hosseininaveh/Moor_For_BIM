@@ -35,6 +35,11 @@ ENV ROS_IP=127.0.0.1
 # Set up X11 forwarding for GUI applications
 RUN apt-get install -y x11-apps
 '''
+
+Run the following to install all requirements:
+```
+docker build -t ros-noetic-custom .
+'''
 Now, you have ROS noetic on docker in Ubuntu 22.04. To run the ros noetic commands, run the following code in every terminal:
 ```
 docker run -it ros:noetic-robot
