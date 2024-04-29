@@ -10,7 +10,7 @@ sudo systemctl start docker
 sudo systemctl enable docker
 docker pull ros:noetic-robot
 ```
-Now, you will have ROS noetic on docker in Ubuntu 22.04. To run the docker run the following code in every terminal:
+Now, you have ROS noetic on docker in Ubuntu 22.04. To run the ros noetic commands, run the following code in every terminal:
 ```
 docker run -it ros:noetic-robot
 ```
