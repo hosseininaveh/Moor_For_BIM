@@ -9,7 +9,32 @@ sudo apt install docker.io
 sudo systemctl start docker
 sudo systemctl enable docker
 docker pull ros:noetic-robot
+
 ```
+Make a Dockerfile using sudo gedit Dockerfile and write the following on it:
+```
+FROM ros:noetic
+
+# Install ROS packages
+RUN apt-get update && apt-get install -y \
+    ros-noetic-cv-bridge \
+    ros-noetic-image-transport \
+    ros-noetic-joy \
+    ros-noetic-controller-manager \
+    ros-noetic-joint-state-controller \
+    ros-noetic-gazebo-ros \
+    ros-noetic-rviz \
+    ros-noetic-move-base \
+    ros-noetic-navigation \
+    ros-noetic-robot-localization
+
+# Set up environment variables
+ENV ROS_MASTER_URI=http://localhost:11311
+ENV ROS_IP=127.0.0.1
+
+# Set up X11 forwarding for GUI applications
+RUN apt-get install -y x11-apps
+'''
 Now, you have ROS noetic on docker in Ubuntu 22.04. To run the ros noetic commands, run the following code in every terminal:
 ```
 docker run -it ros:noetic-robot
