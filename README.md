@@ -1,11 +1,7 @@
 # Moor_For_BIM
 Autonomous six wheels Robot for 3D modelling of a building
 
-
-
-
-
-# Installation: 
+# Installation on ROS neotic: 
 
 
 1) go to the following link and follow the steps mentioned in readme:
@@ -22,14 +18,14 @@ https://github.com/hosseininaveh/buildings
   sudo apt install python
   python -m pip install --user numpy scipy matplotlib ipython jupyter pandas sympy nose
 ```  
-3) the follwoing package should also be installed. In case of using ROS noetic, replace 'melodic' with 'noetic' in the follwoing commands:
+3) the follwoing packages should also be installed. 
 
  ```
 sudo apt-get install ros-melodic-move-base 
 sudo apt-get install ros-melodic-navigation
 sudo apt-get install ros-melodic-robot-localization
 ```
-4) If there is a catkin workspace in the home direcotry named catkin_ws, then 
+4) If there is a catkin workspace in the home directory named catkin_ws, then 
 
 ```
 cd ~/catkin_ws/src 
