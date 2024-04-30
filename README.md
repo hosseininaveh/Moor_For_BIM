@@ -46,7 +46,7 @@ ENV ROS_IP=127.0.0.1
 RUN apt-get install -y x11-apps
 
 # Copy the Gazebo model into the container
-COPY ~/.gazebo/models/buildings/building /root/.gazebo/models/building
+COPY ~/.gazebo/models/building /root/.gazebo/models/building
 ```
 Run the following to install all requirements:
 ```
