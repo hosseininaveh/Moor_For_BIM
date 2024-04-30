@@ -38,11 +38,21 @@ RUN apt-get install -y x11-apps
 Run the following to install all requirements:
 ```
 docker build -t ros-noetic-custom .
-'''
-Now, you have ROS noetic on docker in Ubuntu 22.04. To run the ros noetic commands, run the following code in every terminal:
 ```
-docker run -it ros:noetic-robot
+Now, you have ROS noetic on docker in Ubuntu 22.04. To run the ros noetic commands, run the following code in the first terminal:
 ```
+sudo docker run -it --rm  -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v ~/.Xauthority:/root/.Xauthority  ros-noetic-custom
+```
+and run these commands in the second terminal:
+```
+sudo docker ps -l
+```
+Find the name of the container as the ID
+```
+docker exec -it <the name of the container> bash
+source ros_entrypoint.sh
+```
+
 
 1) go to the following link and follow the steps mentioned in readme:
 https://github.com/hosseininaveh/buildings
