@@ -2,6 +2,8 @@
 Autonomous six wheels Robot for 3D modelling of a building
 
 # Installation on ROS noetic: 
+you can ignore the next step if you have Ubuntu 22.04 without docker
+### Installing using Docker on Ubuntu 22.04 (WSL2)
 If you are going to install the packages in Ubuntu 22.04 or later, you can use docker. In this case, please do these extra steps:
 ```
 sudo apt update
@@ -53,12 +55,13 @@ docker exec -it <the name of the container> bash
 source ros_entrypoint.sh
 ```
 
+### The main step for installation
 
 1) go to the following link and follow the steps mentioned in readme:
 https://github.com/hosseininaveh/buildings
 
 
-
+### Go to step 4 if you are using Docker
 2) in the case of using Ubuntu 20.04 and ROS noetic, the following steps should be followed:
 
 ```
@@ -76,25 +79,24 @@ https://github.com/hosseininaveh/buildings
 sudo apt-get install ros-noetic-move-base 
 sudo apt-get install ros-noetic-navigation
 sudo apt-get install ros-noetic-robot-localization
+sudo apt-get install ros-noetic-cv-bridge ros-noetic-image-transport ros-noetic-joy ros-noetic-controller-manager ros-noetic-joint-state-controller ros-noetic-gazebo-ros ros-noetic-rviz
 ```
-4) If there is a catkin workspace in the home directory named catkin_ws, then 
+4) Make a catkin workspace in the home directory and named catkin_ws, then 
 
 ```
-cd ~/catkin_ws/src 
+mkdir -p catkin_ws/src
+cd catkin_ws/src 
 git clone https://github.com/yujinrobot/yocs_msgs.git
 git clone https://github.com/hosseininaveh/Moor_For_BIM 
 git clone https://github.com/turtlebot/turtlebot.git
 git clone https://github.com/husky/husky.git
-
-sudo apt-get install ros-noetic-cv-bridge ros-noetic-image-transport ros-noetic-joy ros-noetic-controller-manager ros-noetic-joint-state-controller ros-noetic-gazebo-ros ros-noetic-rviz
-
-cd ~/catkin_ws
+cd ..
 rosdep install --from-paths src -i -y
 catkin_make
 ```
-5) make a directory in Desktop using follwoing command:
+5) make a directory in Desktop using the follwoing command:
 ```
-mkdir ~/Desktop/moor_images
+mkdir moor_images
 ```
 
 # Running the repository: 
