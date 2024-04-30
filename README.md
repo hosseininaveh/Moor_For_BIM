@@ -1,6 +1,11 @@
 # Moor_For_BIM
 Autonomous six wheels Robot for 3D modelling of a building
 
+### The main step for installation
+
+1) go to the following link and follow the steps mentioned in readme:
+https://github.com/hosseininaveh/buildings
+
 # Installation on ROS noetic: 
 you can ignore the next step if you have Ubuntu 22.04 without docker
 ### Installing using Docker on Ubuntu 22.04 (WSL2)
@@ -39,6 +44,9 @@ ENV ROS_IP=127.0.0.1
 
 # Set up X11 forwarding for GUI applications
 RUN apt-get install -y x11-apps
+
+# Copy the Gazebo model into the container
+COPY ~/.gazebo/models/buildings/building /root/.gazebo/models/building
 ```
 Run the following to install all requirements:
 ```
@@ -58,10 +66,7 @@ docker exec -it <the name of the container> bash
 source ros_entrypoint.sh
 ```
 
-### The main step for installation
 
-1) go to the following link and follow the steps mentioned in readme:
-https://github.com/hosseininaveh/buildings
 
 
 ### Go to step 4 if you are using Docker
