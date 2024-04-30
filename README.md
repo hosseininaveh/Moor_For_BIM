@@ -45,7 +45,7 @@ ENV ROS_IP=127.0.0.1
 
 # Set up X11 forwarding for GUI applications
 RUN apt-get install -y x11-apps
-
+RUN apt-get install -y gedit
 # Copy the Gazebo model into the container
 COPY ~/.gazebo/models/building /root/.gazebo/models/building
 ```
