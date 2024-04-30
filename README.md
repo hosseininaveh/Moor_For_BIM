@@ -30,6 +30,7 @@ RUN apt-get update && apt-get install -y \
     ros-noetic-joy \
     ros-noetic-controller-manager \
     ros-noetic-joint-state-controller \
+    ros-noetic-joint-state-publisher \
     ros-noetic-gazebo-ros \
     ros-noetic-rviz \
     ros-noetic-move-base \
@@ -50,7 +51,7 @@ COPY ~/.gazebo/models/building /root/.gazebo/models/building
 ```
 Run the following to install all requirements:
 ```
-docker build -t ros-noetic-custom .
+sudo docker build -t ros-noetic-custom .
 ```
 Now, you have ROS noetic on docker in Ubuntu 22.04. To run the ros noetic commands, run the following code in the first terminal:
 ```
@@ -65,7 +66,7 @@ Find the name of the container as the ID
 docker exec -it <the name of the container> bash
 source ros_entrypoint.sh
 ```
-
+The above two commands should be run for every new terminal for running ROS commands
 
 
 
@@ -108,7 +109,11 @@ mkdir moor_images
 ```
 
 # Running the repository: 
-
+If you are using Docker use the following commands when opening a new terminal
+```
+docker exec -it <the name of the container> bash
+source ros_entrypoint.sh
+```
 in terminal 1:
 ```
 roslaunch mybot_gazebo mybot_world.launch
