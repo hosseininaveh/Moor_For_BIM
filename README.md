@@ -29,6 +29,8 @@ RUN apt-get update && apt-get install -y \
     ros-noetic-rviz \
     ros-noetic-move-base \
     ros-noetic-navigation \
+    ros-noetic-robot-state-publisher \
+    ros-noetic-xacro \
     ros-noetic-robot-localization
 
 # Set up environment variables
