@@ -118,6 +118,7 @@ in terminal 1:
 ```
 roslaunch mybot_gazebo mybot_world.launch
 ```
+It takes time to download the models in .gazebo folder. So, It is time to have a cup of coffee :) 
 in terminal 2:
 ```
 roslaunch yocs_waypoint_provider provider.launch
