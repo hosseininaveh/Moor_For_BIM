@@ -34,8 +34,7 @@ ENV ROS_IP=127.0.0.1
 
 # Set up X11 forwarding for GUI applications
 RUN apt-get install -y x11-apps
-'''
-
+```
 Run the following to install all requirements:
 ```
 docker build -t ros-noetic-custom .
