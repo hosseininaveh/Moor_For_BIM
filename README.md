@@ -56,7 +56,7 @@ sudo docker build -t ros-noetic-custom .
 Now, you have ROS noetic on docker in Ubuntu 22.04. To run the ros noetic commands, run the following code in the first terminal:
 ```
 sudo docker volume create my_ros_data
-sudo docker run -it -v my_ros_data:/ros_workspace  --rm  -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v ~/.Xauthority:/root/.Xauthority  ros-noetic-custom
+sudo docker run -it -v my_ros_data:/catkin_ws  --rm  -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v ~/.Xauthority:/root/.Xauthority  ros-noetic-custom
 ```
 and run these commands in the second terminal:
 ```
