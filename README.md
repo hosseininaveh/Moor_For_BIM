@@ -11,7 +11,8 @@ sudo apt install docker.io
 sudo systemctl start docker
 sudo systemctl enable docker
 docker pull ros:noetic-robot
-
+sudo apt-get update
+sudo apt-get install xauth libx11-xcb1 libx11-6 libxext6 libxrender1 libxmu6 libxi6
 ```
 Make a Dockerfile using sudo gedit Dockerfile and write the following on it:
 ```
